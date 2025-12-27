@@ -1,0 +1,4 @@
+spring:
+  name: BackeryManagmentMain
+  profiles: 
+    active: local

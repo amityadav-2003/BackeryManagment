@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+	<persistence-unit name="BackeryManagament">
+		<class>com.uniquebitehub.ApplicationMain.Entity.Address</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Cart</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.CartItem</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Category</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.CustomOrder</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Ingredient</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Inventory</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.OrderItem</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Order</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Payment</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Review</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Role</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.User</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.ProductImage</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.ProductVariant</class>
+		<class>com.uniquebitehub.ApplicationMain.Entity.Product</class>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: BackeryManagmentMain-local
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/unique_bite_hub1?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 10
+      idle-timeout: 30000
+      pool-name: BackeryManagmentMain-pool-local
+      max-lifetime: 2000000
+      connection-timeout: 30000
+
+  jpa:
+    hibernate:
+      ddl-auto: none   # 🔥 IMPORTANT (until entities stable)
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        # ❌ dialect REMOVED (Hibernate auto-detects MySQL)
+
+server:
+  port: 9090
+  servlet:
+    context-path: /backeryManagmentMain-api-local
+
+logging:
+  file:
+    name: logs/backeryManagmentMain.log
+  pattern:
+    console: "%d %-5level [%thread] %logger: %msg%n"
+    file: "%d %-5level [%thread] %logger: %msg%n"
+  level:
+    org.springframework.web: INFO
+    org.hibernate.SQL: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.uniquebitehub.ApplicationMain.Service: INFO
+    org.springframework.security: DEBUG
+
+app:
+  max-file-size: 5242880
