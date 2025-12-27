@@ -1,7 +1,5 @@
 # BackeryManagment
 
-# Ecommerce Backend (Spring Boot)
-
 ## Setup Steps
 
 1. Clone the repository
