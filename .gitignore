@@ -1,0 +1,23 @@
+# Maven
+target/
+*.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+
+# Env & secrets
+.env
+application.properties
+application.yml
+
+# Build
+*.jar
+*.war
+
+# Node (if frontend)
+node_modules/
